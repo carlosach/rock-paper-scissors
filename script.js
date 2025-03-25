@@ -15,3 +15,6 @@ function getHumanChoice(){
     let choice = prompt("Write \"rock\", \"paper\" or \"scissors\":")
     return choice
 }
+
+let humanScore = 0
+let computerScore = 0
