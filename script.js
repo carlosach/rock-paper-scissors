@@ -60,3 +60,24 @@ function playRound(){
         }
     }
 }
+
+// Create playGame function
+// Play 5 rounds
+// Declare a winner at the end
+
+function playGame(){
+    for (i = 0; i < 5; i++){
+        playRound()
+    }
+    if (humanScore > computerScore){
+        console.log("Congratulations, you win!")
+    } else if (humanScore < computerScore){
+        console.log("You lose!")
+    } else {
+        console.log("It's a tie!")
+    }
+    console.log(`Score is:\nYou: ${humanScore}\nCPU: ${computerScore}`)
+    humanScore = 0
+    computerScore = 0
+}
+    
